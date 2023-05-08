@@ -1,9 +1,11 @@
+import { Layout } from "../../Components/Layout"
+
 function MyAccount() {
 
     return (
-      <div className='bg-red-100'>
-        Apoco si desde tailwind  & MyAccount
-      </div>
+      <Layout>
+        Apoco si desde tailwind  & Home
+      </Layout>
     )
   }
   

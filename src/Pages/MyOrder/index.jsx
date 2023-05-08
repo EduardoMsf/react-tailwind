@@ -1,9 +1,11 @@
+import { Layout } from "../../Components/Layout"
+
 function MyOrder() {
 
     return (
-      <div className='bg-red-100'>
-        Apoco si desde tailwind  & MyOrder
-      </div>
+      <Layout>
+        Apoco si desde tailwind  & Home
+      </Layout>
     )
   }
   

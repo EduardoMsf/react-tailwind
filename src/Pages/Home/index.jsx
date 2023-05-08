@@ -1,11 +1,12 @@
-import '../../App.css'
+import { Card } from "../../Components/Card"
+import { Layout } from "../../Components/Layout"
 
 function Home() {
 
   return (
-    <div className='bg-red-100'>
-      Apoco si desde tailwind  & Home
-    </div>
+    <Layout>
+      <Card />
+    </Layout>
   )
 }
 

@@ -1,9 +1,11 @@
+import { Layout } from "../../Components/Layout"
+
 function NotFound() {
 
     return (
-      <div className='bg-red-100'>
-        Apoco si desde tailwind  & NotFound
-      </div>
+      <Layout>
+        Apoco si desde tailwind  & Home
+      </Layout>
     )
   }
   
