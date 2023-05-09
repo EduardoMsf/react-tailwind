@@ -1,11 +1,13 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect, useContext } from "react"
 import { Card } from "../../Components/Card"
 import { Layout } from "../../Components/Layout"
 import { ProductDetail } from "../../Components/ProductDetail"
+import { ShoppingCartContext } from "../../Context"
 
 
 function Home() {
   const [items, setitems] = useState(null)
+  const { cartProducts } = useContext(ShoppingCartContext)
 
   useEffect(() => {
     fetch("https://api.escuelajs.co/api/v1/products")
@@ -13,6 +15,11 @@ function Home() {
       .then( data => setitems(data))
       
   }, [])
+
+  useEffect(() => {
+    console.log(cartProducts)
+  }, [cartProducts])
+  
   
 
   return (
