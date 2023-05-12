@@ -4,7 +4,7 @@ function MyOrders() {
 
     return (
       <Layout>
-        Apoco si desde tailwind  & Home
+        Apoco si desde tailwind  & My-orders
     </Layout>
     )
   }

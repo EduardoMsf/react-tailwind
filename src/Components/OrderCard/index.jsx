@@ -13,7 +13,8 @@ export const OrderCard = props => {
       </div>
       <div className="flex items-center gap-2">
         <p className="text-lg font-medium">{price}</p>
-        <XMarkIcon onClick={() => handleDelete(id)} className="w-6 h-6 cursor-pointer text-black" />
+        { handleDelete && <XMarkIcon onClick={() => handleDelete(id)} className="w-6 h-6 cursor-pointer text-black" />}
+        
       </div>
 
     </div>
