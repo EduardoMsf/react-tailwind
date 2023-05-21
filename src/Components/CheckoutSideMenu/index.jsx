@@ -26,7 +26,7 @@ export const CheckoutSideMenu = () => {
     setCount(0)
   }
 
-  console.log({cartProducts})
+  
   return (
     <aside
       className={`${isCheckoutSideMenuOpen ? "flex" : "hidden"} checkout-side-menu flex flex-col fixed right-0 border border-black rounded-lg bg-white h-full`} >
