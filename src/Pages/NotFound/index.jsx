@@ -4,7 +4,7 @@ function NotFound() {
 
     return (
       <Layout>
-        Apoco si desde tailwind  & Home
+        Apoco si desde tailwind  & Not Found
       </Layout>
     )
   }
