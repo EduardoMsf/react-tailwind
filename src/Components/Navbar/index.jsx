@@ -66,7 +66,7 @@ export const NavBar = () => {
           <NavLink
             to="/my-orders"
             className={({ isActive }) => isActive ? activeStyle : undefined}>
-            My order
+            My orders
           </NavLink>
         </li>
         <li>
