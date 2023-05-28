@@ -34,8 +34,7 @@ export const ShoppingCartProvider = ({ children }) => {
 
   //Get products by category
   const [searchByCategory, setSearchByCategory] = useState(null)
-  console.log('search by filteredItems', filteredItems)
-  
+
   useEffect(() => {
     fetch("https://api.escuelajs.co/api/v1/products")
       .then(response => response.json())
@@ -59,7 +58,7 @@ export const ShoppingCartProvider = ({ children }) => {
       return filteredItemsByCategory(items, searchByCategory)
     }
     if( searchType === 'BY_TITLE_AND_CATEGORY'){
-      return filteredItemsByCategory(items, searchByCategory).fitler( item => {
+      return filteredItemsByCategory(items, searchByCategory).filter( item => {
         item.title.toLowerCase().includes(searchByTitle.toLowerCase())
       })
     }
@@ -82,6 +81,10 @@ export const ShoppingCartProvider = ({ children }) => {
     if( !searchByTitle && !searchByCategory ){
       setFilteredItems(filterBy(null,items, searchByTitle, searchByCategory))
     }
+
+    // return () => {
+    //   setSearchByTitle(null)
+    // }
       
   }, [items, searchByTitle, searchByCategory])
 
