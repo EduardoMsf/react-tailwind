@@ -7,8 +7,6 @@ import { Link } from "react-router-dom"
 function MyOrders() {
   const { order } = useContext(ShoppingCartContext)
 
-  console.log('MyOrders component', order)
-
     return (
       <Layout>
          <div className="flex items-center justify-center relative w-80">
